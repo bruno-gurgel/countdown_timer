@@ -7,10 +7,34 @@
 	justify-content: space-around;
 	height: 100%;
 	letter-spacing: 3px;
+	font-family: "Red Hat Text", sans-serif;
 }
 
 .heading {
 	font-weight: 400;
+}
+
+.countdown {
+	display: flex;
+	justify-content: center;
+	gap: 1.5rem;
+}
+
+.number-box {
+}
+
+.number-box__number {
+	background-color: hsl(236, 21%, 26%);
+	color: hsl(345, 95%, 68%);
+	font-size: 5rem;
+	padding: 0.7rem 1rem;
+	border-radius: 25%;
+	font-weight: 700;
+}
+
+.number-box__label {
+	margin-top: 1rem;
+	color: hsl(237, 18%, 59%);
 }
 
 .social-media {
