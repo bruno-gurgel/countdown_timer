@@ -1,4 +1,7 @@
 import "./App.css";
+import facebookIcon from "./assets/icon-facebook.svg";
+import instagramIcon from "./assets/icon-instagram.svg";
+import pinterestIcon from "./assets/icon-pinterest.svg";
 
 export default function App() {
 	function milisecondsToCountdown(miliseconds) {
@@ -24,6 +27,11 @@ export default function App() {
 		<div className="App">
 			<h1 className="heading">We're launching soon</h1>
 			<div>Days Hours Minute Seconds</div>
+			<div className="social-media">
+				<img src={facebookIcon} alt="Facebook icon" />
+				<img src={pinterestIcon} alt="Facebook icon" />
+				<img src={instagramIcon} alt="Facebook icon" />
+			</div>
 			<div class="attribution">
 				<p>
 					Challenge by

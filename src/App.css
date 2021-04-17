@@ -12,3 +12,9 @@
 .heading {
 	font-weight: 400;
 }
+
+.social-media {
+	display: flex;
+	justify-content: center;
+	gap: 1.5rem;
+}
