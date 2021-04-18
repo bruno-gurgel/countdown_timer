@@ -20,9 +20,9 @@ export default function App() {
 
 	function calculateCountdown() {
 		const year = new Date().getFullYear();
-		const month = new Date().getMonth();
-		const today = new Date(`${month}/10/${year}`);
-		const openingDate = new Date(`${month + 1}/10/${year}`);
+		const month = new Date().getMonth() + 1;
+		const today = new Date(Date.now());
+		const openingDate = new Date(`${month === 12 ? 1 : month + 1}/18/${year}`);
 
 		const difference = new Date(openingDate - today);
 
@@ -34,20 +34,6 @@ export default function App() {
 		};
 
 		return timeLeft;
-	}
-
-	function milisecondsToCountdown(miliseconds) {
-		const days = Math.floor(miliseconds / (1000 * 60 * 60 * 24));
-		const hours = Math.floor((miliseconds % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		const minutes = Math.floor((miliseconds % (1000 * 60 * 60)) / (1000 * 60));
-		const seconds = Math.floor((miliseconds % (1000 * 60)) / 1000);
-
-		return {
-			days,
-			hours,
-			minutes,
-			seconds,
-		};
 	}
 
 	return (
@@ -66,7 +52,7 @@ export default function App() {
 					<img src={pinterestIcon} alt="Facebook icon" />
 					<img src={instagramIcon} alt="Facebook icon" />
 				</div>
-				<div class="attribution">
+				<div className="attribution">
 					<p>
 						Challenge by
 						<a
