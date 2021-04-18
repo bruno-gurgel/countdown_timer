@@ -27,9 +27,16 @@
 	background-color: hsl(236, 21%, 26%);
 	color: hsl(345, 95%, 68%);
 	font-size: 5rem;
-	padding: 0.7rem 1rem;
+	padding: 0.7rem 1rem; /*TODO: CHECK PADDING*/
+	width: 9.5rem;
+	height: 8rem;
 	border-radius: 25%;
 	font-weight: 700;
+
+	/* animation-name: downflip;
+	animation-duration: 0.5s; */
+
+	animation: all 0.5s ease-out downflip;
 }
 
 .number-box__label {
@@ -42,3 +49,26 @@
 	justify-content: center;
 	gap: 1.5rem;
 }
+
+social-media__icon:hover {
+	color: #fff;
+}
+
+/* @keyframes upflip {
+	from {
+		transform: rotateX(0deg);
+	}
+	to {
+		transform: rotateX(-90deg);
+	}
+}
+
+@keyframes downflip {
+	0% {
+		transform: rotateX(90deg);
+	}
+	100% {
+		transform: rotateX(0deg);
+	}
+}
+ */
