@@ -18,6 +18,8 @@
 	display: flex;
 	justify-content: center;
 	gap: 1.5rem;
+	padding: 1rem;
+	margin-bottom: 1rem;
 }
 
 .number-box {
@@ -50,8 +52,20 @@
 	gap: 1.5rem;
 }
 
-social-media__icon:hover {
-	color: #fff;
+.social-media__icon {
+	cursor: pointer;
+}
+
+.social-media__icon:hover {
+	opacity: 0.5;
+}
+
+.attribution__link {
+	color: hsl(345, 95%, 68%);
+}
+
+.attribution__link:hover {
+	color: hsla(345, 95%, 68%, 0.5);
 }
 
 /* @keyframes upflip {

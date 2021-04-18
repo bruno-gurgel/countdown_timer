@@ -48,22 +48,28 @@ export default function App() {
 
 			<footer className="footer">
 				<div className="social-media">
-					<img src={facebookIcon} alt="Facebook icon" />
-					<img src={pinterestIcon} alt="Facebook icon" />
-					<img src={instagramIcon} alt="Facebook icon" />
+					<img src={facebookIcon} alt="Facebook icon" className="social-media__icon" />
+					<img src={pinterestIcon} alt="Facebook icon" className="social-media__icon" />
+					<img src={instagramIcon} alt="Facebook icon" className="social-media__icon" />
 				</div>
 				<div className="attribution">
 					<p>
-						Challenge by
+						Challenge by{" "}
 						<a
 							href="https://www.frontendmentor.io?ref=challenge"
 							target="_blank"
 							rel="noreferrer"
+							className="attribution__link"
 						>
 							Frontend Mentor
-						</a>
+						</a>{" "}
 						and Coded by{" "}
-						<a href="https://github.com/bruno-gurgel" target="_blank" rel="noreferrer">
+						<a
+							href="https://github.com/bruno-gurgel"
+							target="_blank"
+							rel="noreferrer"
+							className="attribution__link"
+						>
 							Bruno Gurgel
 						</a>
 						.
